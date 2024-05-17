@@ -13,8 +13,10 @@ dependencies:
   - mapclassify
   - matplotlib
   - folium
+  - contextily
   - geodatasets
   - xyzservices
+  - libpysal
   - pip
   - pip:
       - git+https://github.com/geopandas/geopandas.git
