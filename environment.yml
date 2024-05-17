@@ -1,0 +1,20 @@
+name: geopandas-workshop
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyterlab>4
+  # - geopandas>=1
+  - pandas
+  - shapely>=2
+  - pyogrio
+  - pyproj
+  - pyarrow
+  - mapclassify
+  - matplotlib
+  - folium
+  - geodatasets
+  - xyzservices
+  - pip
+  - pip:
+      - git+https://github.com/geopandas/geopandas.git
