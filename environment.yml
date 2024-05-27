@@ -2,7 +2,7 @@ name: geopandas-workshop
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python
   - jupyterlab>4
   # - geopandas>=1
   - pandas
