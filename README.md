@@ -21,6 +21,8 @@ within your user account (e.g. `My Documents`, not `C:\`).
 
 ### Step 2: Install the required Python packages
 
+#### Conda
+
 To follow the workshop, we recommend creating a `conda` environment to
 ensure you have all the required packages installed (the
 [environment.yml](environment.yml) file list the required packages).
@@ -45,9 +47,26 @@ mamba env create --file environment.yml
 conda activate geopandas-workshop
 ```
 
-In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martinfleis/geopandas-one-workshop/main?urlpath=lab/) and open the notebooks right away.
+#### MyBinder
 
-### Step 3: starting Jupyter Lab
+In case you do not want to install everything and just want to try out the course material, use the environment setup by Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martinfleis/geopandas-one-workshop/main?urlpath=lab/) and open the notebook right away. Note that the performance may not be optimal.
+
+#### pip / Google Colab
+
+You can also install the necessary dependencies from PyPI using `pip`. The instructions can be used both locally and within Google Colab.
+
+```bash
+pip install geodatasets matplotlib folium pyarrow mapclassify
+pip install git+https://github.com/geopandas/geopandas.git
+```
+
+If you are working locally (not using Google Colab), you may want to install Jupyter Lab as well.
+
+```bash
+pip install jupyterlab
+```
+
+### Step 3: starting Jupyter Lab (unless using Colab)
 
 The workshop itself is a [Jupyter notebook](http://jupyter.org/), an interactive environment to write and run code.
 
